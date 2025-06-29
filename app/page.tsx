@@ -48,10 +48,14 @@ export default function HomePage() {
         </a>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center py-8 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Your Business Name. All rights reserved.
-      </footer>
+    <footer className="text-center text-sm py-6 text-gray-500">
+      © {new Date().getFullYear()} iCEG Systems Inc. All rights reserved.
+      <div className="text-xs text-gray-400 mt-1">
+        Updated on {new Date().toLocaleDateString()} @ {new Date().toLocaleTimeString()}
+      </div>
+    </footer>
+
+
     </div>
   );
 }
