@@ -3,7 +3,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white text-gray-800">
       {/* Hero Section */}
       <section className="text-center py-20 px-4 bg-gradient-to-b from-blue-600 to-blue-400 text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Grow Your Business with iceg-GHL.</h1>
+        <h1 className="text-4xl md:text-6xl font-bold mb-4"> Welcome to iceg-GHL 🚀  </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
           All-in-one CRM & Marketing Automation for Agencies, Freelancers, and SMEs.
         </p>
