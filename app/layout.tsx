@@ -1,29 +1,41 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+// app/layout.tsx
+import './globals.css'
+import type { Metadata } from 'next'
+import LayoutClient from './layout.client'
 
-// Initialize fonts
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-// Metadata
 export const metadata: Metadata = {
-  title: "GHL Landing Page",
-  description: "High-converting GHL landing page for your agency",
-};
+  title: 'tope guipo | Virtual Assistant',
+  description: 'tope guipo - Expert Virtual Assistant for GoHighLevel, Automation, and Tech Solutions',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  openGraph: {
+    title: 'tope guipo | Virtual Assistant',
+    description: 'Tech-savvy VA for GHL, Automation, and Systems',
+    url: 'https://www.vaghl.com',
+    images: [
+      {
+        url: '/myPhoto.jpg',
+        width: 800,
+        height: 600,
+        alt: 'tope guipo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'tope guipo | Virtual Assistant',
+    description: 'Tech-savvy VA for GHL, Automation, and Systems',
+    images: ['/myPhoto.jpg'],
+  },
+}
 
-// Root layout
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="font-sans bg-white text-gray-900">{children}</body>
+    <html lang="en">
+      <body>
+        <LayoutClient>{children}</LayoutClient>
+      </body>
     </html>
-  );
+  )
 }

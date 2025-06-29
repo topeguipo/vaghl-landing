@@ -1,4 +1,4 @@
-export default function Head() {
+export default function xHead() {
   return (
     <>
       <title>GoHighLevel Services | Your Brand</title>
