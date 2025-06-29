@@ -1,61 +1,59 @@
-export default function HomePage() {
+export default function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      {/* Hero Section */}
-      <section className="text-center py-20 px-4 bg-gradient-to-b from-blue-600 to-blue-400 text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4"> Welcome to iceg-GHL 🚀  </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-          All-in-one CRM & Marketing Automation for Agencies, Freelancers, and SMEs.
-        </p>
-        <a
-          href="#get-started"
-          className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100"
-        >
-          Get Started Now
-        </a>
-      </section>
+    <div className="px-6 py-12 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-4 text-blue-700">📘 VA Portfolio – GoHighLevel Specialist</h1>
 
-      {/* Services Section */}
-      <section className="py-16 px-6 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">What You Get</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-            <h3 className="font-semibold text-xl mb-2">Funnels & Websites</h3>
-            <p>Create high-converting landing pages, sales funnels, and websites with ease.</p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-            <h3 className="font-semibold text-xl mb-2">Email & SMS Marketing</h3>
-            <p>Automated drip campaigns, triggers, and follow-ups that convert.</p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md">
-            <h3 className="font-semibold text-xl mb-2">CRM & Pipelines</h3>
-            <p>Track leads, manage clients, and close deals with your own sales pipeline.</p>
-          </div>
-        </div>
-      </section>
+      <p className="mb-6 text-lg text-gray-700">
+        I am a virtual assistant focused on helping businesses set up and automate their sales and marketing processes using GoHighLevel.
+        From custom fields to Facebook CAPI, I can configure and support your CRM operations end-to-end.
+      </p>
 
-      {/* CTA */}
-      <section id="get-started" className="bg-blue-100 py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Ready to Elevate Your Business?</h2>
-        <p className="text-lg mb-8 max-w-xl mx-auto">
-          Let us help you launch your GoHighLevel system — set up automations, pipelines, and more!
-        </p>
-        <a
-          href="https://calendly.com/yourlink" // replace with your actual link
-          className="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-700"
-        >
-          Book a Free Demo
-        </a>
-      </section>
+      <h2 className="text-2xl font-semibold mt-10 mb-2 text-gray-800">🚀 Core Skills</h2>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>Workflow Automation & Triggers</li>
+        <li>Custom Fields and Values Setup</li>
+        <li>Form, Survey & Funnel Design</li>
+        <li>Facebook CAPI & Pixel Integration</li>
+        <li>Calendar Booking Pages</li>
+        <li>Email & SMS Drip Campaigns</li>
+        <li>Webhook Integrations (with Next.js or third-party tools)</li>
+        <li>Reputation Management (Review requests)</li>
+        <li>Lead Capture → Pipeline → Booking</li>
+      </ul>
 
-    <footer className="text-center text-sm py-6 text-gray-500">
-      © {new Date().getFullYear()} iCEG Systems Inc. All rights reserved.
-      <div className="text-xs text-gray-400 mt-1">
-        Updated on {new Date().toLocaleDateString()} @ {new Date().toLocaleTimeString()}
+      <h2 className="text-2xl font-semibold mt-10 mb-2 text-gray-800">🔧 Tools I Use</h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-gray-700 text-sm">
+        <div>📍 GoHighLevel</div>
+        <div>🛠 Zapier / Make</div>
+        <div>📨 Mailgun / SMTP</div>
+        <div>🎯 Facebook Events Manager</div>
+        <div>🔗 Calendly / Google Calendar</div>
+        <div>🖼 Canva, Notion, Trello</div>
       </div>
-    </footer>
 
+      <h2 className="text-2xl font-semibold mt-10 mb-2 text-gray-800">📌 Sample Projects</h2>
+      <ul className="list-disc list-inside text-gray-700 space-y-1">
+        <li>Fitness Gym: 7-day email + SMS automation w/ pipeline tracking</li>
+        <li>Real Estate: Facebook Lead Ad → CRM auto tagging & appointment booking</li>
+        <li>Spa: Google Review SMS automation using triggers</li>
+      </ul>
 
+      <h2 className="text-2xl font-semibold mt-10 mb-2 text-gray-800">📬 Contact Me</h2>
+      <p className="text-gray-700 mb-4">
+        Want to work with a VA who understands CRM automation deeply? Book a free consult:
+      </p>
+
+      <a
+        href="https://calendly.com/yourlink"
+        target="_blank"
+        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+      >
+        📅 Book a Free Consultation
+      </a>
+
+      <footer className="text-xs text-center py-8 text-gray-400 mt-16">
+        Updated on {new Date().toLocaleDateString()} @ {new Date().toLocaleTimeString()}
+      </footer>
     </div>
   );
 }
